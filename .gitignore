@@ -1,2 +1,5 @@
 test.ipynb
 streamlit_app_Ex.py
+.DS_Store
+__pycache__/
+conwaysGame.py
