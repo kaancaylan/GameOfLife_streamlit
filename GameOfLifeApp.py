@@ -15,7 +15,7 @@ class ConwaysGameApp:
     def initialize_game(self):
         matrix_shape = st.sidebar.slider("Shape of Square Matrix", 10, 600, step=10, value=200)
         alive_cells = st.sidebar.slider("Proportion of Alive Cells at the Beginning", 0.0, 1.0, step=0.01, value=0.5)
-        stopping_time = st.sidebar.slider("Time in between rounds", 0.0, 3.0, value=0.01)
+        stopping_time = st.sidebar.slider("Time in between rounds (Seconds)", 0.0, 3.0, value=0.01)
         # number_of_rounds = number = st.number_input('Number of Rounds to run the Game: ', value=100, min_value=1, max_value=10000)
         # st.write('The Game will run for ', number_of_rounds, "rounds")
 
