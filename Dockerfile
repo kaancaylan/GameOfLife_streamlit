@@ -16,8 +16,8 @@ RUN git clone https://github.com/kaancaylan/GameOfLife_streamlit.git .
 
 RUN pip3 install -r requirements.txt
 
-EXPOSE 8503
+EXPOSE 8501
 
-HEALTHCHECK CMD curl --fail http://localhost:8503/_stcore/health
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
-ENTRYPOINT ["streamlit", "run", "GameOfLifeApp.py", "--server.port=8503", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "GameOfLifeApp.py", "--server.port=8501", "--server.address=0.0.0.0"]
